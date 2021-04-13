@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<script>
+    if (window.Glue) {
+        Glue({})
+            .then((glue) => {
+                console.log("glue ready");
+                window.glue = glue;
+            })
+            .catch(console.error)
+    }
+</script>
+
+<body>
+    <h2>Glue42 Iframe</h2>
+    <iframe id="frame" src="https://gdavidkov.github.io/glue42-iframe/iframe.html" height="200" width="400"></iframe>
+</body>
+
+</html>
